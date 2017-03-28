@@ -2,11 +2,16 @@
 machine:
 
   timezone:
-    America/Dallas # Set the timezone
+    America/Dallas
 
   machine:
   	java:
     	version: oraclejdk81
+
+  general:
+  	branches:
+  		only:
+  			- master
 
   # Add some environment variables
   environment:
@@ -20,3 +25,8 @@ checkout:
 
 ## Customize test commands
 test:
+	override:
+		- ./gradlew test -is
+	post:
+    	- mkdir -p $CIRCLE_TEST_REPORTS/junit/
+    	- find . -type f -regex ".*/build/test-results/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
