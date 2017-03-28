@@ -1,0 +1,22 @@
+## Customize the test machine
+machine:
+
+  timezone:
+    America/Dallas # Set the timezone
+
+  machine:
+  	java:
+    	version: oraclejdk81
+
+  # Add some environment variables
+  environment:
+    CIRCLE_ENV: test
+
+## Customize checkout
+checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init # use submodules
+
+## Customize test commands
+test:
