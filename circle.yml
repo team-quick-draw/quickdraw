@@ -1,8 +1,8 @@
 general:
   build_dir: quickdraw4Java
 machine:
-	timezone:
-		America/Dallas
+  timezone:
+    America/Dallas
   java:
     version: oraclejdk81
 test:
