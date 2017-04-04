@@ -9,9 +9,9 @@ machine:
     	version: oraclejdk81
 
   general:
-  	branches:
-  		only:
-  			- master
+    branches:
+      only:
+        - master
 
   # Add some environment variables
   environment:
