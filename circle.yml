@@ -1,3 +1,2 @@
 general:
-  build_dir:
-    quickdraw4Java
+  build_dir: quickdraw4Java
