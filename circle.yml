@@ -1,6 +1,6 @@
 machine:
   timezone:
-    America/Dallas
+    America/Chicago
   java:
     version: oraclejdk81
 test:
