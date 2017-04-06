@@ -2,7 +2,7 @@ machine:
   timezone:
     America/Chicago
   java:
-    version: oraclejdk81
+    version: oraclejdk8
 test:
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
