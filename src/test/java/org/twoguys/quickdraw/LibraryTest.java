@@ -10,6 +10,8 @@ public class LibraryTest
   {
     Library library = new Library();
     boolean someReturnValue = library.someLibraryMethod();
+    System.out.println("someReturnValue: " + someReturnValue);
+    System.err.println("someReturnValue: " + someReturnValue);
     assertTrue("return value should be true", someReturnValue);
   }
 }
